@@ -1,0 +1,8 @@
+@import "./style/header.css";
+@import "./style/productCardList.css";
+
+body{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
