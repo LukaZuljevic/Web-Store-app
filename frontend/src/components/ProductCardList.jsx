@@ -1,6 +1,13 @@
 function ProductCardList({backendData, setCart}) {
 
-  const addToCart = () => {
+  const addToCart = (event) => {
+
+    const product = {
+      title: event.target.parentElement.querySelector('.product-title').innerText,
+      price: event.target.parentElement.querySelector('.product-price').innerText
+    };
+
+    setCart((prevCart) => [...prevCart, product]);
 
   };
 

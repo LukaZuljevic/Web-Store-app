@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import ProductCardList from "./components/ProductCardList";
-
-
+import Cart from "./components/Cart";
 
 export default function App() {
   const [backendData, setBackendData] = useState([]);
@@ -17,12 +16,13 @@ export default function App() {
     fetchData();
   }, []);
 
-
+  console.log(cart);
 
   return (
     <div>
       <Header />
-      <ProductCardList backendData={backendData} setCart={setCart}/>
+      <ProductCardList backendData={backendData} setCart={setCart} />
+      <Cart cart={cart} />
     </div>
   );
 }

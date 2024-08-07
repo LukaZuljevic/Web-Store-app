@@ -1,4 +1,9 @@
 function Header() {
+  const handleCartClick = () => {
+    const cartElement = document.querySelector('.background');
+    cartElement.style.display = 'block';
+  };
+
   return (
     <header>
       <ul>
@@ -7,7 +12,7 @@ function Header() {
         </li>
         <div className="navigation">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Cart</a></li>
+          <li><a href="#" onClick={handleCartClick}>Cart</a></li>
         </div>
       </ul>
     </header>
