@@ -1,6 +1,7 @@
 @import "./style/header.css";
 @import "./style/productCardList.css";
 @import "./style/cart.css";
+@import "./style/filter.css";
 
 body{
   box-sizing: border-box;
